@@ -1,6 +1,6 @@
 
 /*
-Creación de las Bases de Datos
+Creaciï¿½n de las Bases de Datos
 */
 
 GO
