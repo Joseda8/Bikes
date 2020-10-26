@@ -32,6 +32,12 @@ CREATE TABLE productos_1(
 	precioVenta float
 );
 
+CREATE TABLE inventario_1(
+	idTienda int,
+	idProducto int FOREIGN KEY REFERENCES productos(idProducto),
+	cantidad int,
+);
+
 CREATE TABLE clientes_1(
 	idCliente int NOT NULL,
 	nombre varchar(255),
@@ -76,6 +82,12 @@ CREATE TABLE productos_3(
 	idCategoria int FOREIGN KEY REFERENCES categorias(idCategoria),
 	annoModelo int,
 	precioVenta float
+);
+
+CREATE TABLE inventario_3(
+	idTienda int,
+	idProducto int FOREIGN KEY REFERENCES productos(idProducto),
+	cantidad int,
 );
 
 CREATE TABLE clientes_3(

@@ -13,6 +13,9 @@ SELECT * FROM categorias;
 INSERT INTO productos_1 (idProducto, nomProducto, idMarca, idCategoria, annoModelo, precioVenta) 
 SELECT * FROM productos;
 
+INSERT INTO inventario_1 (idTienda, idProducto, cantidad) 
+SELECT * FROM inventario WHERE (idTienda = 1);
+
 INSERT INTO clientes_1 (idCliente, nombre, apellido, telefono, email, calle, ciudad, estado, codPostal) 
 SELECT * FROM clientes;
 
@@ -29,6 +32,9 @@ SELECT * FROM categorias;
 
 INSERT INTO productos_3 (idProducto, nomProducto, idMarca, idCategoria, annoModelo, precioVenta) 
 SELECT * FROM productos;
+
+INSERT INTO inventario_3 (idTienda, idProducto, cantidad) 
+SELECT * FROM inventario WHERE (idTienda = 3);
 
 INSERT INTO clientes_3 (idCliente, nombre, apellido, telefono, email, calle, ciudad, estado, codPostal) 
 SELECT * FROM clientes;

@@ -19,4 +19,6 @@ CREATE OR ALTER PROCEDURE newOrder @idClient int, @state int, @fechaOrden nvarch
             INSERT INTO ordenes_3 (idOrden, idCliente, estadoOrden, fechaOrden, required_date, fechaEnvio, idTienda, idEmpleado)
             VALUES ((SELECT order_id FROM @MyTableVar), @idClient, @state, @fechaOrden, @required_date, @fechaEnvio, @idTienda, @idEmpleado);
         END
+
+        SELECT order_id FROM @MyTableVar;
     END

@@ -104,8 +104,8 @@ END
 
 /*
 BEGIN
-EXEC newOrder @idClient = 3, @state = 4, @fechaOrden = 'London', @required_date = 'London',
- @fechaEnvio = 'London', @idTienda = 3, @idEmpleado = 1;
+EXEC newOrder @idClient = 3, @state = 4, @fechaOrden = '20160101', @required_date = '20160101',
+ @fechaEnvio = '20160101', @idTienda = 3, @idEmpleado = 1;
 SELECT TOP 2 * FROM ordenes ORDER BY idOrden DESC;
 SELECT TOP 2 * FROM ordenes_1 ORDER BY idOrden DESC;
 SELECT TOP 2 * FROM ordenes_3 ORDER BY idOrden DESC;
