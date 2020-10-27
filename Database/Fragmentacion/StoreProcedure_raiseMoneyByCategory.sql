@@ -1,4 +1,4 @@
-ALTER PROCEDURE raiseMoneyByCategory @storage int, @idTienda int, @mes nvarchar(10), @category int
+CREATE OR ALTER PROCEDURE raiseMoneyByCategory @storage int, @idTienda int, @mes nvarchar(10), @category int
 --OR ALTER
     AS
     BEGIN

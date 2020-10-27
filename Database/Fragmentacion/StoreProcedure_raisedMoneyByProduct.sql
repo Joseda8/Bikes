@@ -1,4 +1,4 @@
-ALTER PROCEDURE raisedMoneyByProduct @idTienda int, @idProducto int,
+CREATE OR ALTER PROCEDURE raisedMoneyByProduct @idTienda int, @idProducto int,
 @tipoFecha nvarchar(10), @minFecha nvarchar(10), @maxFecha nvarchar(10)
 
     AS
